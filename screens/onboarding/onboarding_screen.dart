@@ -202,8 +202,16 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 children: [
                   Expanded(
                     child: GestureDetector(
-                      onTap: () =>
-                          setState(() => _unitSystem = UnitSystem.metric),
+                      onTap: () {
+                        if (_unitSystem != UnitSystem.metric) {
+                          setState(() {
+                            // Convert from imperial to metric
+                            _weight = _weight * 0.453592; // lbs to kg
+                            _height = _height * 2.54; // in to cm
+                            _unitSystem = UnitSystem.metric;
+                          });
+                        }
+                      },
                       child: Container(
                         padding: const EdgeInsets.symmetric(vertical: 14),
                         decoration: BoxDecoration(
@@ -227,8 +235,16 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   ),
                   Expanded(
                     child: GestureDetector(
-                      onTap: () =>
-                          setState(() => _unitSystem = UnitSystem.imperial),
+                      onTap: () {
+                        if (_unitSystem != UnitSystem.imperial) {
+                          setState(() {
+                            // Convert from metric to imperial
+                            _weight = _weight / 0.453592; // kg to lbs
+                            _height = _height / 2.54; // cm to in
+                            _unitSystem = UnitSystem.imperial;
+                          });
+                        }
+                      },
                       child: Container(
                         padding: const EdgeInsets.symmetric(vertical: 14),
                         decoration: BoxDecoration(
