@@ -183,7 +183,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     trailing: const Icon(Icons.open_in_new_rounded,
                         size: 18, color: AppTheme.textMuted),
                     onTap: () => _launchUrl(
-                        'https://nexodev.site/GymLog-Health-Calculator/privacy-policy'),
+                        'https://nexodev.site/gym-calc/privacy-policy'),
                   ),
                   const Divider(color: AppTheme.surfaceDark, height: 1),
                   ListTile(
@@ -193,8 +193,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         style: TextStyle(color: AppTheme.textPrimary)),
                     trailing: const Icon(Icons.open_in_new_rounded,
                         size: 18, color: AppTheme.textMuted),
-                    onTap: () => _launchUrl(
-                        'https://nexodev.site/GymLog-Health-Calculator/terms-of-service'),
+                    onTap: () =>
+                        _launchUrl('https://nexodev.site/gym-calc/terms'),
                   ),
                 ],
               ),
