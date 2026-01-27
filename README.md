@@ -72,8 +72,8 @@ GymLog is a comprehensive health and fitness calculator built with Flutter. It h
 
 GymLog respects your privacy. All health data is stored locally on your device and is never transmitted to any external server.
 
--   [Privacy Policy](https://gymlog.nexodev.site/privacy-policy.html)
--   [Terms of Service](https://gymlog.nexodev.site/terms-of-service.html)
+-   [Privacy Policy](https://gymlog.nexodev.site/privacy_policy.html)
+-   [Terms of Service](https://gymlog.nexodev.site/terms_of_service.html)
 
 ## 📞 Contact
 
