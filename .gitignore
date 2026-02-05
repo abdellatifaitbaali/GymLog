@@ -12,6 +12,12 @@ Business Infos.txt
 .svn/
 .swiftpm/
 migrate_working_dir/
+/assets/play_store/mockups
+/GymLog.code-workspace
+key.properties
+**/*.jks
+**/*.keystore
+/docs/*.md
 
 # IntelliJ related
 *.iml
